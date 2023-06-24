@@ -615,6 +615,7 @@ function getInstanceJs() {
     _DoSetJoystickValue(name, x, y, player, scheme, preventAutoSwitch) {
       x = this.Clamp(x, -1, 1);
       y = this.Clamp(y, -1, 1);
+
       this.SetJoystickInputState(name, player, scheme, x, y, preventAutoSwitch);
     }
     _SetJoystickValue(name, x, y, player, scheme, preventAutoSwitch) {
